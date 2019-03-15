@@ -1,0 +1,44 @@
+<html>
+
+<head>
+	<title>Express</title>
+</head>
+
+<body>
+	<h1>Hello!</h1>
+			<div>
+		<form action="/list" method="get">
+			<button type="submit">See the list</button>
+		</form>
+		<div>
+			<p>after clicking update the page to come back</p>
+		<div>
+		<form action="/clear" method="post">
+			<button type="submit">Clear the list</button>
+		</form>
+		<div>
+	<div>
+		<form action="/add" method="POST">
+			Add Item:<br>
+			<input type="text" name="name"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+	<div>
+		<form action="/del" method="post">
+			Delete Item:<br>
+			<input type="text" name="name"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+			<form action="/filter" method="post">
+				Filter with starting letter (Please write only one letter)<br>
+				<input type="text" name="letter" pattern="[A-Za-z]{1}"><br><br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
